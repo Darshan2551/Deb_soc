@@ -5,36 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+    .logo {
+            position: fixed;
+            top: 10px;
+            right: 20px;
+            z-index: 999; /* Ensure it's on top of other elements */
         }
-        .contact-details {
-            display: flex;
-            justify-content: space-around;
-            margin-bottom: 20px;
+
+        .logo img {
+            width: 100px; /* Adjust the width of the logo */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 50%; /* Make it a circular logo */
         }
-        .contact-details a {
-            color: #333;
-            text-decoration: none;
-        }
-        .contact-details a:hover {
-            color: #666;
-        }
-        .enquiry-form {
-            margin-bottom: 20px;
-        }
-        .social-media {
-            display: flex;
-            justify-content: space-around;
-            margin-bottom: 20px;
-        }
-        .social-media img {
-            width: 50px;
-            height: 50px;
-        }
+    body {
+        font-family: Arial, sans-serif;
+        background-color: black;
+        color: white;
+        padding: 20px; /* Add padding for better readability */
+    }
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    a:hover {
+        color: #ccc;
+    }
+    h1, h2 {
+        border-bottom: 1px solid #ccc; /* Add a border under headings */
+        padding-bottom: 5px; /* Add space after headings */
+    }
+    p {
+        line-height: 1.6; /* Set line height for paragraphs */
+    }
+    .contact-details,
+    .enquiry-form,
+    .social-media {
+        background-color: #333; /* Add a darker background for sections */
+        padding: 15px;
+        margin-bottom: 20px;
+        border-radius: 8px; /* Round corners of sections */
+    }
+    .contact-details p,
+    .enquiry-form p,
+    .social-media p {
+        margin: 0; /* Remove default paragraph margins */
+    }
+    .contact-details a,
+    .enquiry-form a,
+    .social-media a {
+        display: block; /* Make links block elements for better spacing */
+        margin-bottom: 10px; /* Add space between links */
+    }
+    .contact-details a:hover,
+    .enquiry-form a:hover,
+    .social-media a:hover {
+        color: #999; /* Change link color on hover */
+    }
+
+
+      
     </style>
 </head>
 <body>
+    <div class="logo">
+        <img src="debsoc remove.png" alt="Logo">
+    </div>
     <h1>Contact Us</h1>
     <p>Thank you for your interest in our debate competitions and public speaking events! We are excited to hear from you and assist with any inquiries or feedback you may have. Here are the different ways you can get in touch with us:</p>
 
